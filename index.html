@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LieuxProche — Trouvez des lieux à proximité</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header class="banner">
+    <div class="banner-inner">
+      <div class="banner-header">
+        <div class="logo">
+          <h1 class="site-title">LieuxProche</h1>
+        </div>
+        <nav class="banner-nav">
+          <a href="index.html" class="nav-link active">Accueil</a>
+          <a href="about.html" class="nav-link">À propos</a>
+        </nav>
+      </div>
+      <p class="tagline">Trouvez les lieux et événements les plus proches de chez vous — adaptés à vos envies.</p>
+      <p class="banner-footer">LieuxProche</p>
+    </div>
+  </header>
+  <main class="container">
+    <section class="intro card">
+      <h2>À propos</h2>
+      <p>
+        <strong>LieuxProche</strong> est votre assistant pour découvrir les lieux et événements intéressants près de chez vous. En quelques informations simples sur vos préférences et votre localisation, la plateforme vous recommande des endroits adaptés à votre profil : lieux de culture, événements sociaux, espaces de loisir, etc.
+      </p>
+      <p>Remplissez le formulaire ci-dessous pour démarrer et découvrir ce qui vous attend près de vous !</p>
+    </section>
+    <section class="form-section card">
+      <h2>Parlez-nous de vous</h2>
+      <div class="form-wrapper">
+        <label>Nom
+          <input id="name" type="text" placeholder="Ton nom" />
+        </label>
+        <label>Sexe
+          <select id="sexe">
+            <option value="">--</option>
+            <option value="Homme">Homme</option>
+            <option value="Femme">Femme</option>
+            <option value="Non-binaire">Non-binaire</option>
+            <option value="Autre">Autre</option>
+          </select>
+        </label>
+        <label>Année de naissance
+          <input id="annee" type="number" min="1900" max="2025" placeholder="Ex: 2000" />
+        </label>
+        <label>Type de rencontre souhaitée
+          <input id="typeRencontre" type="text" placeholder="Ex : amitié, sans prise de tête, ..." />
+        </label>
+        <label>Présentation
+          <textarea id="presentation" placeholder="Parle-nous de toi..." rows="4"></textarea>
+        </label>
+        <button id="collect-btn" class="btn">Valider</button>
+        <pre id="output-pre" class="output-pre"></pre>
+      </div>
+    </section>
+    <section class="cards-row">
+      <article class="place-card">
+        <img src="assets/tour eiffel.png" alt="Tour Eiffel" />
+        <h3>Tour Eiffel</h3>
+        <p>Rencontres et balades au pied de la dame de fer.</p>
+      </article>
+      <article class="place-card">
+        <img src="assets/concer.png" alt="Salle de concert" />
+        <h3>Salle de concert</h3>
+        <p>Partagez une soirée, échangez vos playlists et vos coups de cœur live.</p>
+      </article>
+      <article class="place-card">
+        <img src="assets/musée.png" alt="Musée" />
+        <h3>Musée</h3>
+        <p>Rencontres culturelles et visites commentées improvisées.</p>
+      </article>
+    </section>
+  </main>
+  <footer class="site-footer">
+    &copy; 2025 LieuxProche - Tous droits réservés
+  </footer>
+  <script src="/script.js"></script>
+  <script src="/main.js"></script>
+</body>
+</html>
